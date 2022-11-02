@@ -2,6 +2,8 @@
 
 ## DEMO
 
+[https://taroosg.github.io/win98janken/](https://taroosg.github.io/win98janken/)
+
 ## 紹介と使い方
 
 - Windows98 風のじゃんけん．
