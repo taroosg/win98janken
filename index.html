@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <title>Win98Janken</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body class="win98">
+  <!--   最初に出るウインドウ-->
+  <div class='window' id="modal_alert">
+    <div class='header'>
+      <img class='icon' src='images/exe.gif' /> 注意！
+    </div>
+    <div class='content'>
+      <p>警告!</p>
+      <p>お使いのコンピュータが危険にさらされている可能性があります．</p>
+      <p>コンピュータが出した手に対して，直ちに勝てる手を選択してください．</p>
+      <p>OKを押すとスタートします</p>
+      <center>
+        <button id="modal_open">
+          <a id="modal_open" class="button_link">OK</a>
+        </button>
+      </center>
+    </div>
+  </div>
+
+  <!--98風じゃんけんウインドウ-->
+  <div id='modal_content'>
+    <div class='window'>
+      <div class='header'>
+        <img class='icon' src='images/exe.gif' /> Janken Control Wizard
+      </div>
+      <div class='content'>
+        <center>
+          <h3 id=com>WARNING</h3>
+          <div class="flex">
+            <button id="zero" class="flex_item">
+              <a id="zero" class="button-link">グー</a>
+            </button>
+            <button id="two" class="flex_item">
+              <a id="two" class="button-link">チョキ</a>
+            </button>
+            <button id="five" class="flex_item">
+              <a id="five" class="button-link">パー</a>
+            </button>
+          </div>
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <!--勝ったときのウインドウ-->
+  <div class='window' id="win">
+    <div class='header'>
+      <img class='icon' src='images/exe.gif' /> You win
+    </div>
+    <div class='content'>
+      <p>G's AcademyによってPCが保護されました．</p>
+      <p>OKを押すと終了します．</p>
+      <center>
+        <button id="exit">
+          <a id="exit" class="button_link">OK</a>
+        </button>
+      </center>
+    </div>
+  </div>
+
+  <!--負けたときのウインドウ-->
+  <div class='window' id="lose">
+    <div class='header'>
+      <img class='icon' src='images/exe.gif' /> Error
+    </div>
+    <div class='content'>
+      <p>エラー 1117: じゃんけん中に致命的なエラーが発生しました</p>
+      <center>
+        <button id="dead">
+          <a id="dead" class="button_link">OK</a>
+        </button>
+      </center>
+    </div>
+  </div>
+
+  <!--ブルースクリーン用の要素-->
+  <div id="bs">
+  </div>
+
+  <!-- JavaScriptの読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
